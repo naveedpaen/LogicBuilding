@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicBuilding", "LogicBuilding\LogicBuilding.csproj", "{8CAE5A4D-53C4-4A5B-A7CC-90BD32C89721}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Loops", "Loops", "{BAE5BD72-38D2-469C-8000-74CE62221D9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "For", "For\For.csproj", "{C2A4E7C7-9CDC-4575-9025-414A18DC3CAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{8CAE5A4D-53C4-4A5B-A7CC-90BD32C89721}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CAE5A4D-53C4-4A5B-A7CC-90BD32C89721}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CAE5A4D-53C4-4A5B-A7CC-90BD32C89721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A4E7C7-9CDC-4575-9025-414A18DC3CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A4E7C7-9CDC-4575-9025-414A18DC3CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A4E7C7-9CDC-4575-9025-414A18DC3CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A4E7C7-9CDC-4575-9025-414A18DC3CAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C2A4E7C7-9CDC-4575-9025-414A18DC3CAD} = {BAE5BD72-38D2-469C-8000-74CE62221D9F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {647BCA3B-4E4C-4DAB-9A4E-1EC8A53D5520}
