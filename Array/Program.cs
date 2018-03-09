@@ -1,13 +1,12 @@
 ﻿using System;
 
-namespace For
+namespace Array
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("this is for loop programssss");
-            Console.ReadKey();
+            Console.WriteLine("Hello World!");
         }
     }
 }

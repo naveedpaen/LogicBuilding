@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace For
+namespace List
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("this is for loop programssss");
+            Console.WriteLine("List");
             Console.ReadKey();
         }
     }
