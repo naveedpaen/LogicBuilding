@@ -6,40 +6,52 @@ namespace Collection_Array
     {
         static void Main(string[] args)
         {
-            // different ways to declare array
-            int[] dates = new int[29];
-            int[] date = new int[] { 1, 2, 3 };
-            object[] dat = { 5, 5, 5 };
+            // Array Length
+            Console.WriteLine("Array Lenght");
+            int[] dates = new int[5];
+            int lenght = dates.Length;
+            Console.WriteLine(lenght);
+
+            Array.Resize (ref dates, 7);
+            Console.WriteLine(dates.Length);
+            Console.WriteLine("\n");
+
+            // change my array according to values you get
 
 
-            //  Because the object type is the base type for all the types in .NET
-            object[] da = new object[] { 2, 3, "t" };
-            Console.WriteLine(da[2]);
+
+            //  Array having different types of values.
+            //   object type is the base type for all types in .NET
+            Console.WriteLine("abc");
+            object[] da = new object[] { true , 3, "t" };
+            Console.WriteLine(da[1]);
             Console.WriteLine("\n");
 
 
-            int[] abc = new int[2];
-            abc[0] = 4;
-            Console.WriteLine(abc[1]);
-            Console.WriteLine("\n");
-
-
-            //...  Get value of any index No
-            Console.WriteLine("Get value of any index No");
-            int[] ArrayObj = new int[5] { 1, 2, 3, 4, 5 };
-            object a = ArrayObj.GetValue(3);
-            Console.WriteLine(a);
+            Console.WriteLine("For Each");
+            int[] abc = new int[3];
+            foreach (var item in abc)
+            {
+                Console.WriteLine(item);
+            };
+            Console.WriteLine("\n") ;
 
 
 
-
-
+      
+            // assign values at Rrun time;
+            int[] run = new int[3];
+            for (int i = 0; i < run.Length; i++)
+            {
+               run[i] =Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine(run[i]);
+               // int sum += run[i];
+            }
+            
 
 
 
             Console.ReadKey();
-
-
         }
     }
 }
