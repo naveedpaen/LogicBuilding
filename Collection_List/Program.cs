@@ -1,13 +1,12 @@
 ﻿using System;
 
-namespace List
+namespace Collection_List
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("List");
-            Console.ReadKey();
+            Console.WriteLine("Hello World!");
         }
     }
 }
