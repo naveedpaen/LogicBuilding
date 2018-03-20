@@ -6,12 +6,14 @@ namespace Collection_Array
     {
         static void Main(string[] args)
         {
-            // Array Length
-            Console.WriteLine("Array Lenght");
+            // Array Length or last Index Index No
+            Console.WriteLine("Array Lenght or last index No");
             int[] dates = new int[5];
             int lenght = dates.Length;
             Console.WriteLine(lenght);
 
+            // Resize Array
+            Console.WriteLine("Resize Array");
             Array.Resize (ref dates, 7);
             Console.WriteLine(dates.Length);
             Console.WriteLine("\n");
@@ -27,7 +29,7 @@ namespace Collection_Array
             Console.WriteLine(da[1]);
             Console.WriteLine("\n");
 
-
+            // Read array values one by one.
             Console.WriteLine("For Each");
             int[] abc = new int[3];
             foreach (var item in abc)
@@ -38,15 +40,17 @@ namespace Collection_Array
 
 
 
-      
-            // assign values at Rrun time;
+
+            // assign values at Run time and Add Them;
+            Console.WriteLine("Plz Enter 3 values");
             int[] run = new int[3];
+            int sum = 0;
             for (int i = 0; i < run.Length; i++)
             {
-               run[i] =Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine(run[i]);
-               // int sum += run[i];
+              run[i] =Convert.ToInt32(Console.ReadLine());
+              sum += run[i];
             }
+            Console.WriteLine("Sum of Array =",sum);
             
 
 
