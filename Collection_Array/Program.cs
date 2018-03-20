@@ -11,6 +11,20 @@ namespace Collection_Array
             int[] dates = new int[5];
             int lenght = dates.Length;
             Console.WriteLine(lenght);
+            Console.WriteLine("\n");
+
+
+            // what index contain 0
+            Console.WriteLine("what index contain 0");
+            int[] first = new int[5] { 1,0,3,0,5};
+            for (int i = 0; i < 5; i++)
+            {
+                if (first[i]==0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
 
             // Resize Array
             Console.WriteLine("Resize Array");
@@ -18,16 +32,41 @@ namespace Collection_Array
             Console.WriteLine(dates.Length);
             Console.WriteLine("\n");
 
+
+
+            // check a value exist or not
+            Console.WriteLine("check a value exist or not");
+            int[] t = new int[] { 1, 2, 3, 4, 5, 6, 7 };
+           int aa =   Array.BinarySearch(t, 9);
+           Console.WriteLine(aa);
+
+            // Method 2. check a value exist or not.
+            foreach (var item in t)
+            {
+                if (item == 9)
+                {
+                    Console.WriteLine("Value Found");
+                }
+            }
+
+
+
+
+
+
+
+            Console.WriteLine("\n");
             // change my array according to values you get
 
 
 
-            //  Array having different types of values.
+            //  Array having different Data Types.
             //   object type is the base type for all types in .NET
             Console.WriteLine("abc");
             object[] da = new object[] { true , 3, "t" };
             Console.WriteLine(da[1]);
             Console.WriteLine("\n");
+
 
             // Read array values one by one.
             Console.WriteLine("For Each");
@@ -39,6 +78,14 @@ namespace Collection_Array
             Console.WriteLine("\n") ;
 
 
+            // Assign values to array.
+            Console.WriteLine("Assign values to array.");
+            int[] assign = new int[10];
+            for (int i = 0; i < 10; i++)
+            {
+                assign[i] = i + 100;
+                Console.WriteLine(assign[i]);
+            }
 
 
             // assign values at Run time and Add Them;
@@ -51,7 +98,6 @@ namespace Collection_Array
               sum += run[i];
             }
             Console.WriteLine("Sum of Array =",sum);
-            
 
 
 
