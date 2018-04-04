@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace Collection_Array
 {
@@ -6,6 +7,25 @@ namespace Collection_Array
     {
         static void Main(string[] args)
         {
+
+            object[][] a = new object[2][];
+            a[0] = new string[10];
+            a[1] = new string[5];
+
+
+            ArrayList c = new ArrayList();
+            c.Add(1);
+            c.Add("Naveed Ullah");
+            foreach (var item in c)
+            {
+                Console.WriteLine(item);
+            }
+
+
+            //Console.WriteLine(c);
+            Console.WriteLine("\n");
+
+
             // Array Length or last Index Index No
             Console.WriteLine("Array Lenght or last index No");
             int[] dates = new int[5];
