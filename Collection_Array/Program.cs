@@ -9,7 +9,7 @@ namespace Collection_Array
         {
 
             object[][] a = new object[2][];
-            a[0] = new string[10];
+             a[0] = new string[10];
             a[1] = new string[5];
 
 
@@ -17,7 +17,7 @@ namespace Collection_Array
             c.Add(1);
             c.Add("Naveed Ullah");
             foreach (var item in c)
-            {
+            {   
                 Console.WriteLine(item);
             }
 
