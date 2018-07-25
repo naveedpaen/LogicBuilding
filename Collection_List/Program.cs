@@ -22,7 +22,6 @@ namespace Collection_List
 
 
 
-            Console.WriteLine(a[0]);
 
 
             List<Student> stu = new List<Student>();
@@ -70,22 +69,34 @@ namespace Collection_List
 
             List<int> a = new List<int>() { 1,2,3,4,5,6,7,8};
 
-            // convert integer list to , Seperated string
+            // convert integer list to comma Seperated string
             string r = string.Join(",", a.ToArray());
             Console.WriteLine(r);
 
 
-            // split , seprated string to List<string> and list<int>
+            // split comma seprated string to List<string> and list<int>
             List<string> kh =  r.Split(",").ToList();
             List<int> kv = r.Split(",").Select(int.Parse).ToList();
 
-            // split , seperated string to array
+            // split comma seperated string to array
             Array c = r.Split(",");
             foreach (var item in kh)
             {
                 Console.WriteLine(item);
             }
-           // Console.WriteLine(r);
+            // Console.WriteLine(r);
+
+
+            Console.WriteLine( "New Work ");
+            List<int> newlist = new List<int> { 1, 2, 3, 4, 5, 6 };
+          string rt =   String.Join(",", newlist.ToArray());
+            Console.WriteLine(rt);
+
+           string[] ar = rt.Split(",");
+            foreach (var item in ar)
+            {
+                Console.WriteLine(item);
+            }
             Console.ReadKey();
         }
     }
