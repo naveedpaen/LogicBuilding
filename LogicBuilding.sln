@@ -35,7 +35,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extra", "Extra", "{29C28438
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\Inheritance.csproj", "{91EEFC1A-360A-4A68-9C41-032196D4F16D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{40A9DBA4-988C-438C-A685-36F179266FCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics", "Generics\Generics.csproj", "{40A9DBA4-988C-438C-A685-36F179266FCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaheedUllah", "WaheedUllah\WaheedUllah.csproj", "{20F8B302-CE58-4649-8430-3C932E7BFE06}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +97,10 @@ Global
 		{40A9DBA4-988C-438C-A685-36F179266FCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40A9DBA4-988C-438C-A685-36F179266FCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40A9DBA4-988C-438C-A685-36F179266FCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20F8B302-CE58-4649-8430-3C932E7BFE06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20F8B302-CE58-4649-8430-3C932E7BFE06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20F8B302-CE58-4649-8430-3C932E7BFE06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20F8B302-CE58-4649-8430-3C932E7BFE06}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -112,6 +118,7 @@ Global
 		{8E7A6502-BFE3-46BD-B2AF-6BA38034F0C1} = {12A0B9A7-BD60-4009-897C-AF5D21E0B29E}
 		{91EEFC1A-360A-4A68-9C41-032196D4F16D} = {29C28438-ED71-4BCA-9568-A217B5A5DE45}
 		{40A9DBA4-988C-438C-A685-36F179266FCE} = {29C28438-ED71-4BCA-9568-A217B5A5DE45}
+		{20F8B302-CE58-4649-8430-3C932E7BFE06} = {29C28438-ED71-4BCA-9568-A217B5A5DE45}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {647BCA3B-4E4C-4DAB-9A4E-1EC8A53D5520}
