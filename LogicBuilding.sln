@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics", "Generics\Generics.csproj", "{40A9DBA4-988C-438C-A685-36F179266FCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaheedUllah", "WaheedUllah\WaheedUllah.csproj", "{20F8B302-CE58-4649-8430-3C932E7BFE06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaheedUllah", "WaheedUllah\WaheedUllah.csproj", "{20F8B302-CE58-4649-8430-3C932E7BFE06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{150F5C07-0E35-4472-8AA6-7EC75A9661C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +103,10 @@ Global
 		{20F8B302-CE58-4649-8430-3C932E7BFE06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20F8B302-CE58-4649-8430-3C932E7BFE06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20F8B302-CE58-4649-8430-3C932E7BFE06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{150F5C07-0E35-4472-8AA6-7EC75A9661C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{150F5C07-0E35-4472-8AA6-7EC75A9661C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{150F5C07-0E35-4472-8AA6-7EC75A9661C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{150F5C07-0E35-4472-8AA6-7EC75A9661C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -119,6 +125,7 @@ Global
 		{91EEFC1A-360A-4A68-9C41-032196D4F16D} = {29C28438-ED71-4BCA-9568-A217B5A5DE45}
 		{40A9DBA4-988C-438C-A685-36F179266FCE} = {29C28438-ED71-4BCA-9568-A217B5A5DE45}
 		{20F8B302-CE58-4649-8430-3C932E7BFE06} = {29C28438-ED71-4BCA-9568-A217B5A5DE45}
+		{150F5C07-0E35-4472-8AA6-7EC75A9661C3} = {29C28438-ED71-4BCA-9568-A217B5A5DE45}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {647BCA3B-4E4C-4DAB-9A4E-1EC8A53D5520}

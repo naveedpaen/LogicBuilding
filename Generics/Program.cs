@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Generics
 {
@@ -33,6 +34,15 @@ namespace Generics
             ab.FirstName = "Naveed Ullah";
             ab.LastName = "Paen";
             Console.WriteLine(ab.ToString());
+
+
+            List<int> aList = new List<int>();
+            aList.Add(1);
+            aList.Add(2);
+            aList.Add(3);
+
+            List<T> vList = new List<T>();
+
 
             Console.ReadKey();
 

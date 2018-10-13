@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WaheedUllah
 {
-    interface Interface2
+   internal interface Interface2
     {
 
         void method5();
