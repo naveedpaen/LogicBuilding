@@ -20,7 +20,6 @@ namespace Testing
             Intro2.Append("abc ");
 
             Intro2.Insert(0,"Hi ");
-            Intro2.
             Console.WriteLine(Intro2);
 
 

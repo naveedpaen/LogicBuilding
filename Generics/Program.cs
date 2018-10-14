@@ -41,7 +41,7 @@ namespace Generics
             aList.Add(2);
             aList.Add(3);
 
-            List<T> vList = new List<T>();
+      
 
 
             Console.ReadKey();

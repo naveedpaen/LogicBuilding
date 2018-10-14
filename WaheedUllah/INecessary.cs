@@ -7,11 +7,8 @@ namespace WaheedUllah
     interface INecessary : Interface2
     {
 
-        //Interface Members
-        int Id { get; set; }
-        string Name { get; set; }
-        void showTransaction();
-        double getSalary();
+    
+  
 
         void method1();
 
