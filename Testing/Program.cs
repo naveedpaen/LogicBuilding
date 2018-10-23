@@ -20,7 +20,6 @@ namespace Testing
             Intro2.Append("abc ");
 
             Intro2.Insert(0,"Hi ");
-            Console.WriteLine(Intro2);
 
 
             //Console.WriteLine("String Builder");
@@ -39,12 +38,41 @@ namespace Testing
             //}
             //Console.WriteLine(s);
 
+            //StringBuilder myBuilder = new StringBuilder(myString);
+            //myBuilder.Append("New");
 
 
+            
+
+            // output
+            // getNew
 
 
+          //  bool k= String.IsNup;llOrWhiteSpace(myString);
 
-            Console.ReadKey();
+
+            int a2 = 5;
+            Object r="Good";
+            //cant implicitly convert object into string. 
+           // string m = r;
+
+            //  Solution 1
+           // string k =Convert.ToString(r);
+
+
+           // string p = r as string;
+
+            object ab = 14;
+            if ( ab is Int32)
+            {
+                Console.WriteLine();
+            }
+
+            bool g = ab is Int32;
+            Console.WriteLine(g);
+
+
+             Console.ReadKey();
         }
     }
 }
