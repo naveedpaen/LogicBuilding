@@ -72,6 +72,7 @@ namespace Testing
             Console.WriteLine(g);
 
 
+
              Console.ReadKey();
         }
     }
