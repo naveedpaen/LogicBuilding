@@ -1,43 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Lambda
+namespace LambdaExp
 {
-
-    public class EmailSending
-    {
-        public int Id { get; set; }
-
-        public string TaskName { get; set; }
-
-        public String Description { get; set; }
-
-        public string TargetDate { get; set; }
-
-        public string SupportUserName { get; set; }
-
-        public string ToEmail { get; set; }
-
-        public string StatusName { get; set; }
-
-        public string PriorityName { get; set; }
-
-        public string PortalName { get; set; }
-
-        public string ProjectName { get; set; }
-
-        public int SId { get; set; }
-    }
-
-
     class Program
     {
+
+        public class EmailSending
+        {
+            public int Id { get; set; }
+
+            public string TaskName { get; set; }
+
+            public String Description { get; set; }
+
+            public string TargetDate { get; set; }
+
+            public string SupportUserName { get; set; }
+
+            public string ToEmail { get; set; }
+
+            public string StatusName { get; set; }
+
+            public string PriorityName { get; set; }
+
+            public string PortalName { get; set; }
+
+            public string ProjectName { get; set; }
+
+            public int SId { get; set; }
+        }
         static void Main(string[] args)
         {
-
             List<EmailSending> myList = new List<EmailSending>()
             {
                 new EmailSending{Id=1, PortalName="netharland", ProjectName="project 2" , StatusName="Low", PriorityName="Mediu,", SupportUserName="Adnan", TargetDate="12/12/2012", TaskName="Task 1", ToEmail="abc@gmail.com" , SId = 1 },
@@ -51,7 +45,6 @@ namespace Lambda
             {
                 Console.WriteLine($"{item.Id} {item.TaskName}");
             }
-
 
         }
     }

@@ -16,10 +16,18 @@ namespace Foreach
 
     }
 
-    class Program
-    {
+        class Program
+        {
         static void Main(string[] args)
         {
+
+        
+
+ 
+
+
+
+
 
             List<student> studentList = new List<student>()
             {
@@ -28,7 +36,7 @@ namespace Foreach
                 new student{Id=3, Name="Ali", Mobile=0333},
             };
 
-           // studentList.ForEach(x => x.Id);
+            // studentList.ForEach(x => x.Id);
             Console.WriteLine();
 
             foreach (var student in studentList)
@@ -37,20 +45,12 @@ namespace Foreach
             }
 
 
-            studentList.ForEach(x => {Console.WriteLine($" Id= {x.Id} Name={x.Name} Mobile#{x.Mobile}");});
-            var si = studentList.Find(x=> x.Id == 1);
+            studentList.ForEach(x => { Console.WriteLine($" Id= {x.Id} Name={x.Name} Mobile#{x.Mobile}"); });
+            var si = studentList.Find(x => x.Id == 1);
             var se = studentList.Select(x => x.Id == 3);
             
 
-
-
-
-
-            ReadLine();
-
-
-
-                 
+      
         }
     }
 }
