@@ -7,7 +7,7 @@ namespace Collection_Array
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine("");
             object[][] a = new object[2][];
              a[0] = new string[10];
             a[1] = new string[5];
