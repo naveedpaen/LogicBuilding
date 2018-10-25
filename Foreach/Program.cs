@@ -48,6 +48,7 @@ namespace Foreach
             studentList.ForEach(x => { Console.WriteLine($" Id= {x.Id} Name={x.Name} Mobile#{x.Mobile}"); });
             var si = studentList.Find(x => x.Id == 1);
             var se = studentList.Select(x => x.Id == 3);
+            
 
       
         }
