@@ -36,21 +36,33 @@ namespace Foreach
                 new student{Id=3, Name="Ali", Mobile=0333},
             };
 
+
+       student a = studentList.Find(x => x.Id == 2);
+       Console.WriteLine($"{a.Id }{a.Name }{a.Mobile }");
+
+            var b = studentList.Select(x => x.Id == 1);
+            Console.WriteLine(studentList.Select(x => x.Id == 1));
+
+
             // studentList.ForEach(x => x.Id);
             Console.WriteLine();
 
             foreach (var student in studentList)
             {
-                Console.WriteLine($" Id= {student.Id} Name={student.Name} Mobile#{student.Mobile}");
+            //    Console.WriteLine($" Id= {student.Id} Name={student.Name} Mobile#{student.Mobile}");
             }
 
 
-            studentList.ForEach(x => { Console.WriteLine($" Id= {x.Id} Name={x.Name} Mobile#{x.Mobile}"); });
+          //  studentList.ForEach(x => { Console.WriteLine($" Id= {x.Id} Name={x.Name} Mobile#{x.Mobile}"); });
+
+
+
+
             var si = studentList.Find(x => x.Id == 1);
             var se = studentList.Select(x => x.Id == 3);
-            
 
-      
+
+            Console.ReadKey();
         }
     }
 }
