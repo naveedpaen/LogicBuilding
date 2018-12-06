@@ -6,7 +6,7 @@ using static System.Console;
 namespace Foreach
 {
 
-    class student
+    class student: IEqualityComparer<student>
     {
         public int Id { get; set; }
 
@@ -14,6 +14,15 @@ namespace Foreach
 
         public int Mobile { get; set; }
 
+        public bool Equals(student x, student y)
+        {
+            return x.Id == y.Id;
+        }
+
+        public int GetHashCode(student obj)
+        {
+            throw new NotImplementedException();
+        }
     }
 
         class Program
@@ -37,38 +46,57 @@ namespace Foreach
             };
 
 
+         //  List<student> s =  studentList.Where(x => x.Id == 2).ToList();
 
-             
+             // implicit cast betweeb parent and child not possibl e
+            // taske enumerable convert list
+
+
+
             // find all vs find
             // student a = studentList.Find(x => x.Mobile == 2);
-            // Console.WriteLine($"ID = {a.Id }");
+            //Console.WriteLine($"ID = {a.Id }");
 
-            //var c = studentList.FindAll(x => x.Mobile==2);
-            //foreach (var item in c)
+            //List<student>  g= studentList.FindAll(x => x.Mobile==2);
+            //foreach (var item in g)
             //{
             //    Console.WriteLine(item.Name);
             //}
+
+            // need enumerable
+            //foreach (var item in studentList.Where(x => x.Id == 2))
+            //{
+            //    Console.WriteLine(item.GetType);
+            //}
+
+
 
             // prdeicate 
 
             // Advantage of toList ?
             // distinct not working
-            var b = studentList.Where(x => x.Mobile == 2).Distinct().ToList();
+
+            var b = studentList.Where(x => x.Mobile == 2).ToList();
+            var c = b.Distinct();
             foreach (var item in b)
             {
                 Console.WriteLine(item.Name);
             }
 
-           // var distinctList = openTaskslist.Select(x => new { x.SId, x.SupportUserName, x.ToEmail }).Distinct().ToList();
+            // var distinctList = openTaskslist.Select(x => new { x.SId, x.SupportUserName, x.ToEmail }).Distinct().ToList();
 
             // not working
-            // var b = studentList.Where(x => x.Mobile == 2);
-            //b.ForEach(x => { Console.WriteLine(x.Name); });
+            //var bb = studentList.Where(x => x.Mobile == 2);
+            //foreach (var item in bb)
+            //{
+
+            //}
+            //bb.ForEach(x => { Console.WriteLine(x.Name); });
 
 
-            // not working
-            // var b =    studentList.Distinct();
-            // Console.WriteLine(b);
+          //   not working
+          //   var bt = studentList.Distinct();
+          //  Console.WriteLine(b);
 
             //  var b = studentList.Select(x => x.Id == 1);
             //  Console.WriteLine(b);
@@ -76,10 +104,10 @@ namespace Foreach
             // Console.WriteLine($"{b.Id}{b.Name}{b.Mobile}");
 
 
-            foreach (var student in studentList)
-            {
+          //  foreach (var student in studentList)
+          //  {
             //    Console.WriteLine($" Id= {student.Id} Name={student.Name} Mobile#{student.Mobile}");
-            }
+          //  }
 
 
           //  studentList.ForEach(x => { Console.WriteLine($" Id= {x.Id} Name={x.Name} Mobile#{x.Mobile}"); });
