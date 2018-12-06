@@ -31,21 +31,50 @@ namespace Foreach
 
             List<student> studentList = new List<student>()
             {
-                new student{Id=1, Name="Naveed Ullah", Mobile=0303},
-                new student{Id=2, Name="Waheed Ullah", Mobile=0345},
+                new student{Id=2, Name="Waheed Ullah", Mobile=2},
+                new student{Id=2, Name="Waheed Ullah", Mobile=2},
                 new student{Id=3, Name="Ali", Mobile=0333},
             };
 
 
-       student a = studentList.Find(x => x.Id == 2);
-       Console.WriteLine($"{a.Id }{a.Name }{a.Mobile }");
 
-            var b = studentList.Select(x => x.Id == 1);
-            Console.WriteLine(studentList.Select(x => x.Id == 1));
+             
+            // find all vs find
+            // student a = studentList.Find(x => x.Mobile == 2);
+            // Console.WriteLine($"ID = {a.Id }");
+
+            //var c = studentList.FindAll(x => x.Mobile==2);
+            //foreach (var item in c)
+            //{
+            //    Console.WriteLine(item.Name);
+            //}
+
+            // prdeicate 
+
+            // Advantage of toList ?
+            // distinct not working
+            var b = studentList.Where(x => x.Mobile == 2).Distinct().ToList();
+            foreach (var item in b)
+            {
+                Console.WriteLine(item.Name);
+            }
+
+           // var distinctList = openTaskslist.Select(x => new { x.SId, x.SupportUserName, x.ToEmail }).Distinct().ToList();
+
+            // not working
+            // var b = studentList.Where(x => x.Mobile == 2);
+            //b.ForEach(x => { Console.WriteLine(x.Name); });
 
 
-            // studentList.ForEach(x => x.Id);
-            Console.WriteLine();
+            // not working
+            // var b =    studentList.Distinct();
+            // Console.WriteLine(b);
+
+            //  var b = studentList.Select(x => x.Id == 1);
+            //  Console.WriteLine(b);
+            //  Console.WriteLine(studentList.Select(x => x.Id == 1));
+            // Console.WriteLine($"{b.Id}{b.Name}{b.Mobile}");
+
 
             foreach (var student in studentList)
             {
