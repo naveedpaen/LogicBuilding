@@ -9,7 +9,6 @@ namespace WaheedUllah
         public void method1()
         {
             Console.WriteLine("1");
-
         }
 
         public void method2()

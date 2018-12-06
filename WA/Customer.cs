@@ -14,7 +14,6 @@ namespace WA
 
         public override void method11()
         {
-            Console.WriteLine("I am Customer class");
         }
     }
 }
