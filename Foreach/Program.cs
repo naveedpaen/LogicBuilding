@@ -27,12 +27,19 @@ namespace Foreach
 
         class Program
         {
+
+        public bool add(int a)
+        {
+            return a == 2;
+        }
+
+
         static void Main(string[] args)
         {
 
         
-
- 
+         
+    
 
 
 
@@ -48,20 +55,21 @@ namespace Foreach
 
          //  List<student> s =  studentList.Where(x => x.Id == 2).ToList();
 
-             // implicit cast betweeb parent and child not possibl e
+             // implicitly cast betweeb parent and child not possible
+             //Implicitly parent canot cast into child while child can cast to parent. 
             // taske enumerable convert list
 
 
 
             // find all vs find
-            // student a = studentList.Find(x => x.Mobile == 2);
-            //Console.WriteLine($"ID = {a.Id }");
+             student a = studentList.Find(x => x.Mobile == 2);
+            Console.WriteLine($"ID = {a.Id }");
 
-            //List<student>  g= studentList.FindAll(x => x.Mobile==2);
-            //foreach (var item in g)
-            //{
-            //    Console.WriteLine(item.Name);
-            //}
+            List<student>  g = studentList.FindAll(x => x.Mobile==2);
+            foreach (var item in g)
+            {
+                Console.WriteLine(item.Name);
+            }
 
             // need enumerable
             //foreach (var item in studentList.Where(x => x.Id == 2))
@@ -117,6 +125,7 @@ namespace Foreach
 
             var si = studentList.Find(x => x.Id == 1);
             var se = studentList.Select(x => x.Id == 3);
+
 
 
             Console.ReadKey();
