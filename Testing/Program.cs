@@ -29,7 +29,7 @@ namespace Testing
         static void Main(string[] args)
         {
 
-           var value2 = Program.arrayMethod("My Name is", "khan");
+           string[] value2 = Program.arrayMethod("My Name is", "khan");
             Console.WriteLine(value2[0]);
             Console.WriteLine(value2[1]);
 
