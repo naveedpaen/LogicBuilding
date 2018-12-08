@@ -36,15 +36,6 @@ namespace Foreach
 
         static void Main(string[] args)
         {
-
-        
-         
-    
-
-
-
-
-
             List<student> studentList = new List<student>()
             {
                 new student{Id=2, Name="Waheed Ullah", Mobile=2},
@@ -66,16 +57,16 @@ namespace Foreach
             Console.WriteLine($"ID = {a.Id }");
 
             List<student>  g = studentList.FindAll(x => x.Mobile==2);
-            foreach (var item in g)
+            foreach (var item in studentList.FindAll(x => x.Mobile == 2))
             {
                 Console.WriteLine(item.Name);
             }
 
             // need enumerable
-            //foreach (var item in studentList.Where(x => x.Id == 2))
-            //{
-            //    Console.WriteLine(item.GetType);
-            //}
+            foreach (var item in studentList.Where(x => x.Id == 2))
+            {
+                Console.WriteLine();
+            }
 
 
 

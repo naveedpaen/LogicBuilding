@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace Testing
@@ -28,10 +29,24 @@ namespace Testing
 
         static void Main(string[] args)
         {
+            List<int> mylist = new List<int>();
+            mylist.Add(10);
+            mylist.Add(20);
 
-           string[] value2 = Program.arrayMethod("My Name is", "khan");
-            Console.WriteLine(value2[0]);
-            Console.WriteLine(value2[1]);
+            IEnumerable<int> result = mylist;
+            foreach (var item in result)
+            {
+                Console.WriteLine(item);
+            }
+
+
+
+
+
+
+            string[] value2 = Program.arrayMethod("My Name is", "khan");
+          //  Console.WriteLine(value2[0]);
+          //  Console.WriteLine(value2[1]);
 
 
           var value =   Program.tupleMethod("I am ", "khan");
@@ -58,7 +73,6 @@ namespace Testing
 
 
             string a = "";
-            string b;
             StringBuilder mystringbuilder = new StringBuilder();
        
             string emailstring = "naveedpaen@gmail.com,naveed@gmail.com,nav@gmail.com";
@@ -82,22 +96,6 @@ namespace Testing
 
           //  Console.WriteLine(a);
           //  Console.WriteLine(mystringbuilder);
-
-
-
-            
-
-
-
-
-
-
-
-
-
-
-
-
 
             //Intro2.Insert(0,"Hi ");
 
@@ -130,9 +128,6 @@ namespace Testing
 
             //  bool k= String.IsNup;llOrWhiteSpace(myString);
 
-
-            int a2 = 5;
-            Object r="Good";
             //cant implicitly convert object into string. 
            // string m = r;
 
