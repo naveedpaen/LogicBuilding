@@ -20,6 +20,16 @@ namespace WindowsService
                 new Service1()
             };
             ServiceBase.Run(ServicesToRun);
+
+
+
+
+#if DEBUG
+            Service1 myservice = new Service1();
+            myservice.OnDebug();
+            System.Threading.Thread.Sleep(System.Threading.Timeout.Infinite);
+#else
+#endif
         }
     }
 }

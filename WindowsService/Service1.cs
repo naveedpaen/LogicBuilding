@@ -17,12 +17,56 @@ namespace WindowsService
             InitializeComponent();
         }
 
-        protected override void OnStart(string[] args)
+
+        public void Start()
         {
+            try
+            {
+                //timer.Interval = Functions.StartTime;              
+                // timer.Interval = 86450000;
+
+                //timer.Interval = tableproperty.Interval;
+                //timer.Elapsed += Timer_Elapsed;
+                //timer.Start();
+            }
+            catch (Exception ex)
+            {
+               // _iLoggingHelper.Save(ex);
+            }
         }
+
+
+        public void OnDebug()
+        {
+            Start();
+        }
+
+
+
 
         protected override void OnStop()
         {
         }
+
+
+
+
+        // Irshad
+        public void OnDebug2()
+        {
+            //StartUp(null,null);
+            OnStart(null);
+        }
+
+
+        protected override void OnStart(string[] args)
+        {
+            //_ilogManager.Save("Service Started", true);
+            //_timer.Interval = _timeTableManager.Interval;
+            //_timer.Elapsed += (sender, elapsedArgs) => TimeTableCheck();
+            //_timer.Start();
+        }
+
+
     }
 }
