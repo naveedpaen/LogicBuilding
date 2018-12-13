@@ -37,7 +37,7 @@ namespace Property
                 }
                 else
                 {
-                    return  10;
+                    return  0;
                 }
             }
 
@@ -67,7 +67,8 @@ namespace Property
             }
         }
 
-       
+           // get => month == -1 ? DateTime.Now.Month : month;
+          //  set => month = (value > 0 && value< 13) ? value : -1;
 
 
 
@@ -76,8 +77,8 @@ namespace Property
         {
 
             Program o = new Program();
-            o.Cost = 59;
-            Console.WriteLine(o.Cost);
+            o.Roll = 20;
+            Console.WriteLine(o.Roll);
 
 
             o.Month = 15;
