@@ -33,11 +33,11 @@ namespace Property
 
                 if (cost == 5)
                 {
-                    return cost;
+                    return 20;
                 }
                 else
                 {
-                    return  0;
+                    return  10;
                 }
             }
 
@@ -55,7 +55,7 @@ namespace Property
             get { return month; }
             set
             {
-                if (month > 0 && month < 13)
+                if (value > 0 && value < 13)
                 {
                     month = value;
                 }
@@ -67,6 +67,8 @@ namespace Property
             }
         }
 
+       
+
 
 
 
@@ -74,12 +76,11 @@ namespace Property
         {
 
             Program o = new Program();
-            o.Roll = 20;
-            o.Id = o.Roll;
+            o.Cost = 59;
+            Console.WriteLine(o.Cost);
 
 
-            o.Month = 4;
-            Console.WriteLine(o.Month);
+            o.Month = 15;
 
 
             Console.ReadKey();
