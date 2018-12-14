@@ -4,7 +4,14 @@ namespace Property
 {
     class Program
     {
+       
+        public Program()
+        {
+            // myreadonly = 12;
 
+        }
+        const int myconst = 100;
+        public readonly int myreadonly = 15;
 
         private int roll;
 
@@ -67,8 +74,19 @@ namespace Property
             }
         }
 
-           // get => month == -1 ? DateTime.Now.Month : month;
-          //  set => month = (value > 0 && value< 13) ? value : -1;
+
+        private int purchase;
+
+        public int Purchase
+        {
+
+             get => purchase == -1 ? DateTime.Now.Month : month;
+              set => purchase = (value > 0 && value< 13) ? value : -1;
+        }
+
+
+        //   get => month == -1 ? DateTime.Now.Month : month;
+        //  set => month = (value > 0 && value< 13) ? value : -1;
 
 
 
@@ -76,9 +94,16 @@ namespace Property
         static void Main(string[] args)
         {
 
+
+
+
+            
             Program o = new Program();
+            Console.WriteLine(o.myreadonly);
+            
+            
             o.Roll = 20;
-            Console.WriteLine(o.Roll);
+            //Console.WriteLine(o.Roll);
 
 
             o.Month = 15;
