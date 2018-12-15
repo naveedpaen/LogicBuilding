@@ -10,8 +10,7 @@ namespace wa3
     }
     // require
 
-
-    //  if you have a list or array,  to read it you have to use loop read on the base of index number.   string n = myarray[0];
+   // If you have a Collection(list or array ) to read or write, you have to use loop or on the base of index number.   string n = myarray[0];
     // splits a string on base of anything. like comma, space, @
     // Initialize (creating object) means taking memory space and assigning default values. (It will have default value if we donot assign anything)  int a = 20;  
     // reference variable have name of the object
@@ -42,8 +41,8 @@ namespace wa3
             string[] kk = new string[2] { "a", "ko" };
 
             // reference variable have name of the object
-            student o = new  student();
-            o.Id = 30;
+            student o ;
+            //o.Id = 30;
 
           int u =  Program.Good(o);
 
