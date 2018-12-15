@@ -41,7 +41,7 @@ namespace wa3
             string[] kk = new string[2] { "a", "ko" };
 
             // reference variable have name of the object
-            student o ;
+            student o = new student() ;
             //o.Id = 30;
 
           int u =  Program.Good(o);
