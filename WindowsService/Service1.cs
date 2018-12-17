@@ -14,7 +14,7 @@ namespace WindowsService
 {
     public partial class Service1 : ServiceBase
     {
-        private readonly Functions _functions;
+        private readonly Functions _functions = new Functions();
         private readonly Timer _timer;
         public Service1()
         {
@@ -24,22 +24,6 @@ namespace WindowsService
         }
 
 
-        public void Start()
-        {
-            try
-            {
-                //timer.Interval = Functions.StartTime;              
-                // timer.Interval = 86450000;
-
-                //timer.Interval = tableproperty.Interval;
-                //timer.Elapsed += Timer_Elapsed;
-                //timer.Start();
-            }
-            catch (Exception ex)
-            {
-               // _iLoggingHelper.Save(ex);
-            }
-        }
 
 
 
@@ -68,6 +52,10 @@ namespace WindowsService
             _timer.Interval = _functions.Interval;
             _timer.Elapsed += (sender, elapsedArgs) => Doit();
             _timer.Start();
+
+            Functions o = new Functions();
+
+
            //  _timer.Elapsed += (sender, elapsedArgs) =>
 
 
