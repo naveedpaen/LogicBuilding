@@ -36,8 +36,7 @@ namespace Property
         {
             get
             {
-
-
+       
                 if (cost == 5)
                 {
                     return 20;
@@ -86,29 +85,19 @@ namespace Property
 
 
         //   get => month == -1 ? DateTime.Now.Month : month;
-        //  set => month = (value > 0 && value< 13) ? value : -1;
+        //   set => month = (value > 0 && value< 13) ? value : -1;
 
 
 
 
         static void Main(string[] args)
         {
-
-
-
-
-            
             Program o = new Program();
-            Console.WriteLine(o.myreadonly);
-            
+            Console.WriteLine(o.myreadonly);            
             
             o.Roll = 20;
             //Console.WriteLine(o.Roll);
-
-
             o.Month = 15;
-
-
             Console.ReadKey();
 
         }
