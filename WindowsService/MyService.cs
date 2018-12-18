@@ -39,7 +39,6 @@ namespace WindowsService
 
         protected override void OnStart(string[] args)
         {
-            _functions.Id = 20;
             _timer.Interval = _functions.Interval;
             _timer.Elapsed += (sender, elapsedArgs) => TimeTable();
             _timer.Start();
@@ -61,6 +60,8 @@ namespace WindowsService
                 {
                     Functionality();
                 }
+
+
                // File.AppendAllText("LogFile.txt", message);
 
             }
@@ -73,20 +74,12 @@ namespace WindowsService
 
         public void Functionality()
         {
-            _functions.Id = 40;
+       
 
 
         }
 
-        public void abc()
-        {
-            int k =_functions.Id;
 
-
-
-    
-
-        }
 
 
 

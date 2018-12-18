@@ -9,18 +9,18 @@ namespace Testing2
         static void Main(string[] args)
         {
 
+            int a = 2;
+            int d = 3;
+            a =+ d;
 
-            string a = null;
-            a?.Split(',');
-
-
-
-            if (string.IsNullOrEmpty(a))
-            {
-                a.Split(',');
-            }
+            // x = x + y
+            // x += y
 
 
+            Console.WriteLine(a);
+
+
+    
 
             Console.ReadKey();
         }
