@@ -18,6 +18,8 @@ namespace WindowsService
             set { interval = value; }
         }
 
+        public int Id { get; set; }
+
 
 
     }

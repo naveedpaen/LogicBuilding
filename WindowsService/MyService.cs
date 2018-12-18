@@ -21,6 +21,7 @@ namespace WindowsService
             InitializeComponent();
             _functions = new Functions();
             _timer = new Timer();
+          //  _functions.Id = 5;
         }
 
 
@@ -38,6 +39,7 @@ namespace WindowsService
 
         protected override void OnStart(string[] args)
         {
+            _functions.Id = 20;
             _timer.Interval = _functions.Interval;
             _timer.Elapsed += (sender, elapsedArgs) => TimeTable();
             _timer.Start();
@@ -49,18 +51,17 @@ namespace WindowsService
         {
             try
             {
+                _functions.Id = 30;
                 _timer.Stop();
                 string message = "i am in the Doit method";
+                File.AppendAllText("FileName.txt" , "write this text in the file");
                 File.WriteAllText("Logfile2.txt", message);
                 // if (!DateTime.Now.Equals(DayOfWeek.Tuesday) || !DateTime.Now.Equals(DayOfWeek.Sunday))
-                if (DateTime.Now.DayOfWeek.Equals(DayOfWeek.Friday) || DateTime.Now.DayOfWeek.Equals(DayOfWeek.Sunday));
+                if (DateTime.Now.DayOfWeek.Equals(DayOfWeek.Monday) || DateTime.Now.DayOfWeek == DayOfWeek.Sunday)
                 {
                     Functionality();
                 }
-
-
                // File.AppendAllText("LogFile.txt", message);
-
 
             }
             catch (Exception e)
@@ -72,8 +73,18 @@ namespace WindowsService
 
         public void Functionality()
         {
+            _functions.Id = 40;
 
 
+        }
+
+        public void abc()
+        {
+            int k =_functions.Id;
+
+
+
+    
 
         }
 

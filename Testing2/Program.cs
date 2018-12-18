@@ -10,6 +10,17 @@ namespace Testing2
         {
 
 
+            string a = null;
+            a?.Split(',');
+
+
+
+            if (string.IsNullOrEmpty(a))
+            {
+                a.Split(',');
+            }
+
+
 
             Console.ReadKey();
         }
