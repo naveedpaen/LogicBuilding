@@ -12,23 +12,16 @@ using System.IO;
 
 namespace WindowsService
 {
-    public partial class Service1 : ServiceBase
+    public partial class MyService : ServiceBase
     {
         private readonly Functions _functions = new Functions();
         private readonly Timer _timer;
-        public Service1()
+        public MyService()
         {
             InitializeComponent();
             _functions = new Functions();
             _timer = new Timer();
         }
-
-
-
-
-
-
-
 
 
         protected override void OnStop()
@@ -37,12 +30,8 @@ namespace WindowsService
         }
 
 
-
-
-        // Irshad
         public void OnDebug()
         {
-            //StartUp(null,null);
             OnStart(null);
         }
 
@@ -50,36 +39,42 @@ namespace WindowsService
         protected override void OnStart(string[] args)
         {
             _timer.Interval = _functions.Interval;
-            _timer.Elapsed += (sender, elapsedArgs) => Doit();
+            _timer.Elapsed += (sender, elapsedArgs) => TimeTable();
             _timer.Start();
-
             Functions o = new Functions();
-
-
-           //  _timer.Elapsed += (sender, elapsedArgs) =>
-
-
-            //_ilogManager.Save("Service Started", true);
-            //_timer.Interval = _timeTableManager.Interval;
-            //_timer.Elapsed += (sender, elapsedArgs) => TimeTableCheck();
-            //_timer.Start();
         }
 
 
-        public void Doit()
+        public void TimeTable()
         {
             try
             {
                 _timer.Stop();
                 string message = "i am in the Doit method";
-               // File.AppendAllText("LogFile.txt", message);
                 File.WriteAllText("Logfile2.txt", message);
+                // if (!DateTime.Now.Equals(DayOfWeek.Tuesday) || !DateTime.Now.Equals(DayOfWeek.Sunday))
+                if (DateTime.Now.DayOfWeek.Equals(DayOfWeek.Friday) || DateTime.Now.DayOfWeek.Equals(DayOfWeek.Sunday));
+                {
+                    Functionality();
+                }
+
+
+               // File.AppendAllText("LogFile.txt", message);
+
+
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
             }
             
+        }
+
+        public void Functionality()
+        {
+
+
+
         }
 
 

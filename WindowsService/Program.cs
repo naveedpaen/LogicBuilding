@@ -17,7 +17,7 @@ namespace WindowsService
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new Service1()
+                new MyService()
             };
             ServiceBase.Run(ServicesToRun);
 
@@ -25,7 +25,7 @@ namespace WindowsService
 
 
          #if DEBUG
-            Service1 myservice = new Service1();
+            MyService myservice = new MyService();
             myservice.OnDebug();
             System.Threading.Thread.Sleep(System.Threading.Timeout.Infinite);
         #else
