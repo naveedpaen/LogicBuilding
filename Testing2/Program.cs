@@ -22,10 +22,17 @@ namespace Testing2
             //}
 
 
-            a = r == null ? null :r.Split(",");
+            a = (r == null ? null :r.Split(","));
 
 
-           //  a =  r?.Split(",");
+             a =  r?.Split(",");
+
+
+            //text?.ToUpper(); //from previous example, would return null
+
+            //int? length = customerList?.Length; // null if customerList is null   
+            //Customer first = customerList?[0];  // null if customerList is null  
+            //int? count = customerList?[0]?.Orders?.Count();  // null if customerList, the first customer, or Orders is null 
         }
 
         public static string Info(student s)
