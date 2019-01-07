@@ -79,7 +79,7 @@ namespace Property
         public int Purchase
         {
 
-             get => purchase == -1 ? DateTime.Now.Month : month;
+              get => purchase == -1 ? DateTime.Now.Month : month;
               set => purchase = (value > 0 && value< 13) ? value : -1;
         }
 
