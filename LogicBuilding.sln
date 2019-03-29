@@ -61,7 +61,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wa3", "wa3\wa3.csproj", "{5
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testing2", "Testing2\Testing2.csproj", "{791486A4-FCD8-469B-A795-4AEB771890C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question mark", "Question mark\Question mark.csproj", "{1239E399-AF8A-42D5-BB1E-1DAFCCCD1D4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Question mark", "Question mark\Question mark.csproj", "{1239E399-AF8A-42D5-BB1E-1DAFCCCD1D4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing3", "Testing3\Testing3.csproj", "{3522AD3F-A5EF-4668-A8D4-C35DFF62BB8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -169,6 +171,10 @@ Global
 		{1239E399-AF8A-42D5-BB1E-1DAFCCCD1D4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1239E399-AF8A-42D5-BB1E-1DAFCCCD1D4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1239E399-AF8A-42D5-BB1E-1DAFCCCD1D4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3522AD3F-A5EF-4668-A8D4-C35DFF62BB8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3522AD3F-A5EF-4668-A8D4-C35DFF62BB8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3522AD3F-A5EF-4668-A8D4-C35DFF62BB8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3522AD3F-A5EF-4668-A8D4-C35DFF62BB8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -198,6 +204,7 @@ Global
 		{55A8B725-1C6A-491D-874E-1956CB9D02D2} = {29C28438-ED71-4BCA-9568-A217B5A5DE45}
 		{791486A4-FCD8-469B-A795-4AEB771890C5} = {29C28438-ED71-4BCA-9568-A217B5A5DE45}
 		{1239E399-AF8A-42D5-BB1E-1DAFCCCD1D4D} = {29C28438-ED71-4BCA-9568-A217B5A5DE45}
+		{3522AD3F-A5EF-4668-A8D4-C35DFF62BB8D} = {29C28438-ED71-4BCA-9568-A217B5A5DE45}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {647BCA3B-4E4C-4DAB-9A4E-1EC8A53D5520}
