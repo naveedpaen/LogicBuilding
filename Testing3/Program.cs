@@ -18,7 +18,7 @@ namespace Testing3
         int b;
         static void Main(string[] args)
         {
-            int a;
+            int a= 0;
             test t = new test();
             t.Name = "asif";
             int b = 30;
