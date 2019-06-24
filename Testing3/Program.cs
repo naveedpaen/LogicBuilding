@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Testing3
 {
@@ -18,16 +19,11 @@ namespace Testing3
         int b;
         static void Main(string[] args)
         {
-            int a= 0;
-            test t = new test();
-            t.Name = "asif";
-            int b = 30;
-          int  sum = a + b;
-            Program p = new Program();
 
-            Console.WriteLine(t.c);
-
-            Console.ReadKey();
-        }
+            int[] s = { 1, 2, 3, 3, 4,1,2,3 };
+            string[] t = { "a", "b", "c", "d", "a" };
+            int[] q = s.Distinct().ToArray();
+            var a = t;
+           }
     }
 }

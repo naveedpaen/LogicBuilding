@@ -18,7 +18,7 @@ namespace Basic_WindowsService
         {
             timer = new Timer();
             functions = new Functions();
-        }
+         }
 
         public void TimeTable()
         { 
@@ -28,12 +28,11 @@ namespace Basic_WindowsService
         }
 
         public void Functionality()
-        {
+        {          
             timer.Stop();
-            // Functionality
             File.AppendAllText("test.txt", "Windows servic Worked !!");
-            timer.Start();
+            TimeTable();        
         }
 
-    }
+}
 }
