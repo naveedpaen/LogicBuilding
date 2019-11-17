@@ -2,10 +2,31 @@
 using System.Collections.Generic;
 using System.Text;
 
+        public class myClass {
+    
+         }
+
+
 namespace Testing
 {
     class Program
     {
+        private myClass Obj1;
+        public myClass  Obj2= new myClass();
+        public Program()
+        {
+            Obj1 = new myClass();
+        }
+
+        public void myMethod()
+        {
+            myClass obj3 = new myClass();
+        }
+
+
+
+
+
 
         public static string[] arrayMethod(string first, string second)
         {
