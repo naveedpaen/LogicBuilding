@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DI2
+namespace ViewModel
 {
-    public interface IModel
+    public interface ICountry
     {
     }
 }

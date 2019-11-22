@@ -21,22 +21,28 @@ namespace DI2.Controllers
         [Route("mobile")]
         public Mobile Mobile()
         {
+
+
+
+
+
+
            // Mobile m2 = new Mobile (new Model(new Country));
 
+            // Method 1
             Mobile m = new Mobile();
-            m.Id = 1;
             m.ReleaseYear = new DateTime (2019,1,1);
 
-            Model modelObj = new Model();
-            m.Models = modelObj;
-            modelObj.Id = 1;
-            modelObj.ModelName = "Galaxy s4";
+            Model model = new Model();
+            m.Models = model;
+            model.ModelName = "Galaxy s4";
 
             Country c = new Country();
-            c.Id = 1;
             c.CountryName = "Japan";
-            modelObj.Countries = c;
+            model.Countries = c;
 
+
+            // Method 2
 
 
             return m;

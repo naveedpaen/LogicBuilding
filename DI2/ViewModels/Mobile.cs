@@ -16,6 +16,10 @@ namespace DI2
 
         public int Id { get; set; }
 
+        public string Color { get; set; }
+
+        public string processor { get; set; }
+
         public DateTime ReleaseYear { get; set; }
 
         public Model Models { get; set; }
