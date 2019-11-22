@@ -7,6 +7,7 @@ namespace Object
     {
         static void Main(string[] args)
         {
+            // test
             // Method 1
             Mobile m = new Mobile();
             m.Id = 1;
