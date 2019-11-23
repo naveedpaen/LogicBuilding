@@ -11,6 +11,11 @@ namespace DI2.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+        int a = 20;
+        int b = 30; 
+
+        //  they went to bazar for shopping. 
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"

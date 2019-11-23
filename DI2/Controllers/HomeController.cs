@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace DI2.Controllers
 {
     // karachi
+    //lahore
     [Route("api/[controller]")]
     [ApiController]
     public class HomeController : ControllerBase
