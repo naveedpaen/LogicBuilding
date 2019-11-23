@@ -7,44 +7,22 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DI2.Controllers
 {
+    // karachi
     [Route("api/[controller]")]
     [ApiController]
     public class HomeController : ControllerBase
     {
 
         private readonly IContext _context;
-
-      
-
-
+        Mobile m6 = new Mobile(); 
+        
         [HttpGet]
         [Route("mobile")]
         public Mobile Mobile()
         {
-
-
-
-
-
-
-           // Mobile m2 = new Mobile (new Model(new Country));
-
             // Method 1
-            Mobile m = new Mobile();
-            m.ReleaseYear = new DateTime (2019,1,1);
-
-            Model model = new Model();
-            m.Models = model;
-            model.ModelName = "Galaxy s4";
-
-            Country c = new Country();
-            c.CountryName = "Japan";
-            model.Countries = c;
-
-
-            // Method 2
-
-
+            m6.ModelName = "Samsung s4";
+            m6.Companies.CompantyName = "Samsung";
             return m;
         }
 

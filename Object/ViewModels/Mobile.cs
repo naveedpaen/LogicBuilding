@@ -10,7 +10,7 @@ namespace ViewModel
 
         public Mobile()
         {
-           new Company();
+          Companies =     new Company();
         }
 
         public int Id { get; set; }
