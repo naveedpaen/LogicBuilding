@@ -23,4 +23,17 @@ namespace test
         {
         }
     }
+
+
+    public class Mobile : Company
+    {
+
+    }
+
+    public class Company {
+    
+    
+    }
+
+
 }
