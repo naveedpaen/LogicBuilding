@@ -4,10 +4,14 @@ using System.Text;
 
 namespace test
 {
+
+    public interface IUserHandler { }
+
     public class UserHandler
     {
         public void SaveUser(User u)
         {
+            int userId = 1; 
             //  Save User
         }
 

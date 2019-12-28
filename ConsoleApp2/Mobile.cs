@@ -14,8 +14,9 @@ namespace ConsoleApp2
         }
     }
 
-    public class Company { 
-    
+    public class Company {
+
+   
     }
 
 }
