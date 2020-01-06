@@ -93,7 +93,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp3", "ConsoleApp3\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Favourites", "Favourites", "{B60C0F70-8391-4F7A-85BA-22EDC05536EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "empty", "empty\empty.csproj", "{DD864EB5-EAE6-4240-AE64-F2CD7C0DB0CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "empty", "empty\empty.csproj", "{DD864EB5-EAE6-4240-AE64-F2CD7C0DB0CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPI", "WebAPI", "{74F0628E-92D6-43CA-AB1B-045248CEA270}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
